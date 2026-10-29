@@ -50,8 +50,8 @@ Then in App Store Connect → Trace4Kids → TestFlight, add yourself (Internal 
 
 App Store Connect needs a Support URL and a Privacy Policy URL. `docs/` holds both pages, and `.github/workflows/pages.yml` publishes them to `https://jondoesflow.github.io/Trace4Kids/` on every push to `main`.
 
-- **Before publishing:** replace `SUPPORT_EMAIL` in `docs/privacy.html` and `docs/support.html` with the support email address you want shown publicly.
-- **GitHub Pages on a private repo needs a paid GitHub plan.** If the Pages workflow fails, either make the repo public (as Photoeditor and RSD are), or host `docs/` on Netlify and update the URLs in `AppStore/metadata.md`.
+- The pages give jon@jondoesflow.com as the contact address.
+- The repo is public, so GitHub Pages and the Mac build minutes are free.
 
 ## 6. Fill in the listing and submit
 
@@ -66,6 +66,6 @@ Screenshots: every CI run saves simulator screenshots to the `ci-reports` branch
 - [ ] Four secrets added to this repo
 - [ ] TestFlight workflow run, build installed on iPhone and iPad
 - [ ] Tested on a real device: camera view, see-through, pinch/drag, lock, corner marks, leave and come back
-- [ ] `SUPPORT_EMAIL` replaced, Pages published (or Netlify)
+- [ ] Support and privacy pages live at jondoesflow.github.io/Trace4Kids
 - [ ] Listing, age rating (4+), privacy (Data Not Collected) filled in
 - [ ] Submitted for review
