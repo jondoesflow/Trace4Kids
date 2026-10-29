@@ -1,0 +1,28 @@
+2026-10-29 14:15:32 +0000  PublicAppsService: will send request: Apps.apps-get_collection: GET /v1/apps?limit=100&fields[appStoreVersions]=platform,versionString&filter[bundleId]=com.jondoesflow.trace4kids&limit[appStoreVersions]=10&fields[apps]=name,bundleId,appStoreVersions&sort=name&include=appStoreVersions
+2026-10-29 14:15:33 +0000  APIClient (name: API Key <identifier: 255F3VGRQY; issuer: 42fbaf30-a6ab-44fc-a1d8-43a4c8f531b6>) got status code 200 to a GET request to URL: https://api.appstoreconnect.apple.com/v1/apps?fields%5BappStoreVersions%5D=platform,versionString&fields%5Bapps%5D=name,bundleId,appStoreVersions&filter%5BbundleId%5D=com.jondoesflow.trace4kids&include=appStoreVersions&limit=100&limit%5BappStoreVersions%5D=10&sort=name
+2026-10-29 14:15:33 +0000  PublicAppsService: received response: 200 success
+---
+Headers:
+'apple-timing-app': '67 ms'
+'Strict-Transport-Security': 'max-age=31536000; includeSubDomains'
+'x-b3-spanid': 'e86212e0c78d4d5a'
+'Date': 'Thu, 29 Oct 2026 14:15:34 GMT'
+'x-b3-parentspanid': 'c2c1e335884dbeb4'
+'x-daiquiri-instance': 'daiquiri:18493001:mr85p00it-hyhk03154801:7987:26HOTFIX47:daiquiri-amp-all-shared-ext-001-mr'
+'x-request-id': '2DS56ECOW452IL7VC37IJUASNE'
+'Server': 'daiquiri/5'
+'x-b3-traceid': '40d2c56f59c32a20'
+'x-daiquiri-debug-worker-pid': '23102, 50581'
+'Content-Type': 'application/json'
+'x-rate-limit': 'user-hour-lim:3600;user-hour-rem:3599;'
+'Vary': 'accept-encoding'
+'x-apple-jingle-correlation-key': '2DS56ECOW452IL7VC37IJUASNE'
+'Content-Encoding': 'gzip'
+'x-unicorn-originated': 'true'
+'x-responding-instance': 'ac-gateway-api:ac-gateway-api-main-6f67f8f999-xnnrc:ac-gateway-api-main-6f67f8f999-xnnrc:-1::::prod'
+'b3': 'd0e5df104eb73ba42ff516fe84d01269-e86212e0c78d4d5a'
+---
+Data:
+AppStoreConnectPublicAppsResponse(data: [XCServices.AppStoreConnectPublicApp(id: "6828455575", type: XCServices.AppStoreConnectPublicApp.AppStoreConnectPublicType.apps, attributes: Optional(XCServices.AppStoreConnectPublicApp.Attributes(bundleId: Optional("com.jondoesflow.trace4kids"), contentRightsDeclaration: nil, isOrEverWasMadeForKids: nil, name: Optional("Trace4Kids"), primaryLocale: nil, sku: nil, subscriptionStatusUrl: nil, subscriptionStatusUrlForSandbox: nil, subscriptionStatusUrlVersion: nil, subscriptionStatusUrlVersionForSandbox: nil)), links: Optional(XCServices.AppStoreConnectPublicResourceLinks(_self: Optional("https://api.appstoreconnect.apple.com/v1/apps/6828455575"))), relationships: Optional(XCServices.AppStoreConnectPublicApp.Relationships(appClips: nil, appCustomProductPages: nil, appEncryptionDeclarations: nil, appEvents: nil, appInfos: nil, appStoreVersionExperimentsV2: nil, appStoreVersions: Optional(XCServices.AppStoreConnectPublicApp.Relationships.AppStoreVersions(data: Optional([XCServices.AppStoreConnectPublicApp.Relationships.AppStoreVersions.DataType(id: "89e9f3f4-e042-4b1e-93e4-c5d6c6be3738", type: XCServices.AppStoreConnectPublicApp.Relationships.AppStoreVersions.DataType.AppStoreConnectPublicType.appStoreVersions)]), links: Optional(XCServices.AppStoreConnectPublicApp.Relationships.AppStoreVersions.Links(related: Optional("https://api.appstoreconnect.apple.com/v1/apps/6828455575/appStoreVersions"), _self: Optional("https://api.appstoreconnect.apple.com/v1/apps/6828455575/relationships/appStoreVersions"))), meta: Optional(XCServices.AppStoreConnectPublicPagingInformation(paging: XCServices.AppStoreConnectPublicPagingInformation.Paging(limit: 10, total: Optional(1)))))), betaAppLocalizations: nil, betaAppReviewDetail: nil, betaGroups: nil, betaLicenseAgreement: nil, builds: nil, ciProduct: nil, endUserLicenseAgreement: nil, gameCenterDetail: nil, gameCenterEnabledVersions: nil, inAppPurchases: nil, inAppPurchasesV2: nil, preOrder: nil, preReleaseVersions: nil, promotedPurchases: nil, reviewSubmissions: nil, subscriptionGracePeriod: nil, subscriptionGroups: nil)))], links: XCServices.AppStoreConnectPublicPagedDocumentLinks(_self: "https://api.appstoreconnect.apple.com/v1/apps?fields%5BappStoreVersions%5D=versionString%2Cplatform&fields%5Bapps%5D=appStoreVersions%2Cname%2CbundleId&filter%5BbundleId%5D=com.jondoesflow.trace4kids&include=appStoreVersions&limit%5BappStoreVersions%5D=10&sort=name&limit=100", first: nil, next: nil), included: Optional([XCServices.AppStoreConnectPublicAppsResponse.Included.appStoreVersion(XCServices.AppStoreConnectPublicAppStoreVersion(id: "89e9f3f4-e042-4b1e-93e4-c5d6c6be3738", type: XCServices.AppStoreConnectPublicAppStoreVersion.AppStoreConnectPublicType.appStoreVersions, attributes: Optional(XCServices.AppStoreConnectPublicAppStoreVersion.Attributes(appStoreState: nil, appVersionState: nil, copyright: nil, createdDate: nil, downloadable: nil, earliestReleaseDate: nil, platform: Optional(XCServices.AppStoreConnectPublicPlatform.ios), releaseType: nil, reviewType: nil, versionString: Optional("1.0"))), links: Optional(XCServices.AppStoreConnectPublicResourceLinks(_self: Optional("https://api.appstoreconnect.apple.com/v1/appStoreVersions/89e9f3f4-e042-4b1e-93e4-c5d6c6be3738"))), relationships: nil))]), meta: Optional(XCServices.AppStoreConnectPublicPagingInformation(paging: XCServices.AppStoreConnectPublicPagingInformation.Paging(limit: 100, total: Optional(1)))))
+---
+2026-10-29 14:15:33 +0000  PublicAppsService: fetched 1 items, total 1 items, has next page URL: false
