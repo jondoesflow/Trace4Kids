@@ -20,8 +20,9 @@ struct HomeView: View {
 
                     // The system photo picker shows only the pictures in this device's photo library,
                     // and needs no permission. Nothing is downloaded from the internet.
+                    let pickTitle = model.hasSavedTracing ? "Pick a new picture" : "Pick a picture"
                     PhotosPicker(selection: $pickerItem, matching: .images) {
-                        BigButtonLabel(title: model.hasSavedTracing ? "Pick a new picture" : "Pick a picture",
+                        BigButtonLabel(title: pickTitle,
                                        systemImage: "photo.on.rectangle.angled")
                     }
                     .accessibilityIdentifier("pickPicture")

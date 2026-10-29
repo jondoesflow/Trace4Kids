@@ -1,4 +1,4 @@
-import AVFoundation
+@preconcurrency import AVFoundation
 import SwiftUI
 
 /// Runs the back camera for the live view behind the picture. Nothing is recorded: the session has
